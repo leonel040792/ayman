@@ -1,0 +1,125 @@
+@font-face{
+	src: url(../font/MontserratLight.ttf);
+	font-family: montserratLight;
+}
+@font-face{
+	src: url(../font/MontserratRegular.ttf);
+	font-family: montserratRegular;
+}
+@font-face{
+	src: url(../font/MuliRegular.ttf);
+	font-family: muliRegular;
+}
+@font-face{
+	src: url(../font/MuliLight.ttf);
+	font-family: muliLight;
+}
+
+
+.container{
+    min-width: 100%;;
+}
+.menu{
+    background: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    position: fixed;
+    z-index: 1;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    font-family: muliLight;
+    font-weight: 300;
+}
+.menu a{
+    color: #000;
+}
+.menu a:hover{
+    color: darkgray;
+}
+.firstBox{
+    /* text-align: center; */
+    color: #ffff;
+    font-size: 4rem;
+    font-family: muliRegular;
+    font-weight: 400;
+    text-shadow: #0000 1px 10px 5px;
+    min-height: 100vh;
+    background: url('../images/homeBackground.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-color: rgba(0,0,0,0.3);
+    background-blend-mode: darken;
+    background-attachment: fixed;
+}
+.firstBox div:first-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+h1{
+    margin: auto;
+}
+
+
+
+.secondBox{
+    min-height: 100vh;
+    background: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+/* .secondBox div:first-child{
+    background: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+
+} */
+.titleAboutUs{
+    font-size: 3.5rem;
+    padding-top: 10%;
+    padding-left: 5%;
+    margin-bottom: 5%;
+    text-decoration: underline darkgray;
+}
+.textAboutUs{
+    text-align: justify;
+    width: 80%;
+    margin: auto;
+    font-size: 1.5rem;
+    line-height: 40px;
+}
+.textAboutUs, .titleAboutUs{
+    font-family: montserratRegular;
+    font-weight: 400;
+}
+.pictureAboutUs{
+    background: url('../images/aboutUsPic.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.thirdBox{
+    min-height: 100vh;
+    background: green;
+}
+
+.titleServices{
+    font-size: 3.5rem;
+    padding-top: 10%;
+    margin-bottom: 5%;
+    text-decoration: underline darkgray;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer{
+    min-height: 70px;
+    background: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    font-family: muliLight;
+    font-weight: 300;
+    color: #000;
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.footer p{
+    margin-bottom: 0px;
+}
