@@ -20,7 +20,7 @@
     min-width: 100%;;
 }
 .menu{
-    background: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    background: linear-gradient(to right,white 0%, white 50%,darkgray 100%);
     position: fixed;
     z-index: 1;
     min-height: 70px;
@@ -30,12 +30,71 @@
     font-family: muliLight;
     font-weight: 300;
 }
+#logo{
+    position: absolute;
+    left: 15px;
+    height: 70px;
+}
 .menu a{
     color: #000;
 }
-.menu a:hover{
-    color: darkgray;
+.btn{
+    border: solid black 2px;
+    padding: 14px 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: 1s all ease;
+    position: relative;
+    overflow: hidden;
 }
+
+.btn::before{
+    background: rgba(0,0,0,0.8);
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+}
+.btn1::before{
+    width: 0;
+    height: 100%;
+}
+.btn1:hover::before{
+    width: 110%;
+}
+.btn2::before{
+    height: 0;
+    width: 100%;
+}
+.btn2:hover::before{
+    height: 100%;
+}
+.btn3::before{
+    width: 120%;
+    height: 0;
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+.btn3:hover::before{
+    height: 300%;
+}
+.menu a:hover{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .firstBox{
     /* text-align: center; */
     color: #ffff;
@@ -98,16 +157,36 @@ h1{
 
 .thirdBox{
     min-height: 100vh;
-    background: green;
+    background: url('../images/servicesBackground.jpg');
+    background-blend-mode: color;
+    background-color: rgba(0,0,0,0.5);
 }
 
 .titleServices{
     font-size: 3.5rem;
-    padding-top: 10%;
-    margin-bottom: 5%;
+    padding-top: 5%;
     text-decoration: underline darkgray;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
+    color: white;
+    text-shadow: black 0px 0px 10px;
+}
+
+.servicesText{
+    font-family: muliRegular;
+    font-weight: 300;
+    text-align: justify;
+    padding-left: 5%;
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: black 2px 2px 10px;
+}
+#servicesPic{
+    width: 150%;
+    position: absolute;
+    right: 15%;
+    transform: rotate(5deg);
+    box-shadow: green 0px 0px 60px;
+
 }
 .footer{
     min-height: 70px;
