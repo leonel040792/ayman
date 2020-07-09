@@ -1,0 +1,261 @@
+@font-face{
+	src: url(../font/MontserratLight.ttf);
+	font-family: montserratLight;
+}
+@font-face{
+	src: url(../font/MontserratRegular.ttf);
+	font-family: montserratRegular;
+}
+@font-face{
+	src: url(../font/MuliRegular.ttf);
+	font-family: muliRegular;
+}
+@font-face{
+	src: url(../font/MuliLight.ttf);
+	font-family: muliLight;
+}
+
+
+.container{
+    min-width: 100%;;
+}
+.menu{
+    background: linear-gradient(to right,white 0%, white 50%,darkgray 100%);
+    position: fixed;
+    z-index: 1;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    font-family: muliLight;
+    font-weight: 300;
+}
+#logo{
+    position: absolute;
+    left: 15px;
+    height: 70px;
+}
+.menu a{
+    color: #000;
+}
+.btn{
+    border: solid black 2px;
+    padding: 14px 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: 1s all ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::before{
+    background: rgba(0,0,0,0.8);
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+}
+.btn1::before{
+    width: 0;
+    height: 100%;
+}
+.btn1:hover::before{
+    width: 110%;
+}
+.btn2::before{
+    height: 0;
+    width: 100%;
+}
+.btn2:hover::before{
+    height: 100%;
+}
+.btn3::before{
+    width: 120%;
+    height: 0;
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+.btn3:hover::before{
+    height: 300%;
+}
+.menu a:hover{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.firstBox, .firstBoxProduct{
+    /* text-align: center; */
+    color: #ffff;
+    font-size: 4rem;
+    font-family: muliRegular;
+    font-weight: 400;
+    text-shadow: #0000 1px 10px 5px;
+    min-height: 100vh;
+    background: url('../images/homeBackground.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-color: rgba(0,0,0,0.3);
+    background-blend-mode: darken;
+    background-attachment: fixed;
+}
+.firstBox div:first-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.firstBoxProduct div:first-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.firstBoxProduct{
+    background: url(../images/Products2.jpg);
+    background-size: cover;
+    background-color: rgba(0,0,0,0.3);
+    background-blend-mode: darken;
+    background-attachment: fixed;
+}
+
+
+
+
+
+h1{
+    margin: auto;
+}
+
+
+
+.secondBox{
+    min-height: 100vh;
+    background: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+/* .secondBox div:first-child{
+    background: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+
+} */
+.titleAboutUs{
+    font-size: 3.5rem;
+    padding-top: 10%;
+    padding-left: 5%;
+    margin-bottom: 5%;
+    text-decoration: underline darkgray;
+}
+.textAboutUs{
+    text-align: justify;
+    width: 80%;
+    margin: auto;
+    font-size: 1.5rem;
+    line-height: 40px;
+}
+.textAboutUs, .titleAboutUs{
+    font-family: montserratRegular;
+    font-weight: 400;
+}
+.pictureAboutUs{
+    background: url('../images/aboutUsPic.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.thirdBox{
+    min-height: 100vh;
+    background: url('../images/servicesBackground.jpg');
+    background-blend-mode: color;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.titleServices{
+    font-size: 3.5rem;
+    padding-top: 5%;
+    text-decoration: underline darkgray;
+    text-align: center;
+    color: white;
+    text-shadow: black 0px 0px 10px;
+}
+
+.servicesText, .productsText{
+    font-family: muliRegular;
+    font-weight: 300;
+    text-align: justify;
+    padding-left: 5%;
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: black 2px 2px 10px;
+}
+#servicesPic{
+    width: 150%;
+    position: absolute;
+    right: 15%;
+    transform: rotate(5deg);
+    box-shadow: green 0px 0px 60px;
+
+}
+.footer{
+    min-height: 70px;
+    background: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    font-family: muliLight;
+    font-weight: 300;
+    color: #000;
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.footer p{
+    margin-bottom: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------PRODUCTS-----------------------------*/
+.productsFirstDiv{
+    padding-top: 70px;
+    height: 60vh;
+    background: url(../images/Products1.jpg);
+    background-size: cover;
+    background-color: rgba(0,0,0,0.3);
+    background-blend-mode: darken;
+    background-attachment: fixed;
+}
+
+
+#productsPic{
+    height: 100px;
+}
+.containerProducts{
+    padding: 0px;;
+}
+
+.productList{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.listDiv{    
+    padding-left: 0px;
+
+}
